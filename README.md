@@ -1,8 +1,26 @@
-# React + Vite
+# Movie Database Application 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a Movie Database application built using **React** for the frontend, along with **HTML**, **CSS**, and **JavaScript**. The application integrates a public movie API [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started) to allow users to search for movies and view detailed information about them, including their title, release date, overview, ratings, and more. The app also focuses on responsive design and user experience, utilizing **Tailwind CSS** for styling (optional).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+
+- **Search Functionality**: Users can search for movies by entering keywords in the search bar.
+- **Movie Details**: Clicking on a movie from the search results will display detailed information, including movie posters, overviews, ratings, and release dates.
+- **Responsive Design**: The application is fully responsive, ensuring optimal viewing on both desktop and mobile devices.
+- **External API Integration**: Movie data is fetched in real-time from the **TMDb API**.
+
+## Technologies Used
+
+- **React**: Frontend framework for building the dynamic user interface.
+- **HTML5**: Structuring the web pages.
+- **Tailwind CSS** for utility-first design.
+- **JavaScript**: Handling API requests and application logic.
+- **TMDb API**: External API used to fetch movie data.
+- **Axios or Fetch API**: For making HTTP requests to the TMDb API.
+
+
+
+
+
