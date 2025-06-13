@@ -1,11 +1,13 @@
-import { Axios } from "axios";
 import React, { useState } from "react";
 import MovieCard from "./Components/MovieCard";
 import MovieDetails from "./Components/MovieDetails";
 
+
 const App = () => {
   const [movieList, setMovieList] = useState([]);
   const [error, setError] = useState("");
+
+
   const handleSearch = async (query) => {
     try {
       const response = await fetch(
@@ -15,7 +17,7 @@ const App = () => {
 
       if (data.results.length > 0) {
         setMovieList(data.results);
-        setError(""); // Clear any previous errors
+        setError(""); 
       } else {
         setMovieList([]);
         setError("No movies found.");

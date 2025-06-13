@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import MovieDetails from "./MovieDetails";
 import SearchBar from "./SearchBar";
 
 function MovieCard() {
-  const [movieList, setMovieList] = useState([]); // This is where movieList is stored
-  const [selectedMovie, setSelectedMovie] = useState(null); // Lowercase 's' for consistency
+  const [movieList, setMovieList] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleSearch = (query) => {
@@ -30,13 +30,13 @@ function MovieCard() {
     getMovie();
   }, []);
 
-  // Function to open the modal and set the selected movie
+ 
   const openMovieDetails = (movie) => {
     setSelectedMovie(movie);
     setIsModalOpen(true);
   };
 
-  // Function to close the modal
+
   const closeMovieDetails = () => {
     setIsModalOpen(false);
     setSelectedMovie(null);
